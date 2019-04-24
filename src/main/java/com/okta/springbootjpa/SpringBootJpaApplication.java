@@ -16,6 +16,7 @@ public class SpringBootJpaApplication {
 		SpringApplication.run(SpringBootJpaApplication.class, args);
 	}
 
+	@Bean
 	ApplicationRunner init(KayakRepository repository) {
 		String[][] data = {
 			{"sea", "Andrew", "300.12", "NDK"},
@@ -23,7 +24,7 @@ public class SpringBootJpaApplication {
 			{"loaner", "Andrew", "75", "Necky"}
 		};
 
-		retrun args -> {
+		return args -> {
 			Stream.of(data).forEach(array -> {
 				try {
 					Kayak kayak = new Kayak(

@@ -16,10 +16,10 @@ public class Kayak {
     private Integer id;
     private final String name;
     private String owner;
-    private Integer value;
+    private Number value;
     private String makeModel;
 
-    public Kayak(String name, String owner, Integer value, String makeModel) {
+    public Kayak(String name, String owner, Number value, String makeModel) {
         this.name = name;
         this.owner = owner;
         this.value = value;
