@@ -9,4 +9,8 @@ spring:
     password: Test
 server:
   port: 9090
-
+okta:
+  oauth2:
+    issuer: https://dev-196508.okta.com/oauth2/default
+    client-id: 0oakfxav5f5fSEq9C356
+    scopes: openid profile email
